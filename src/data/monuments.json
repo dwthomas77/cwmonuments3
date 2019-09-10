@@ -1,0 +1,22 @@
+{
+    "BOS1" : {
+        "city": "Boston",
+        "state": "MA"
+    },
+    "ELL1" : {
+        "city": "Ellsworth",
+        "state": "ME"
+    },
+    "HAV1" : {
+        "city": "Haverhill",
+        "state": "MA"
+    },
+    "LON1" : {
+        "city": "Londonderry",
+        "state": "NH"
+    },
+    "MET1" : {
+        "city": "Methuen",
+        "state": "MA"
+    }
+}

@@ -24,7 +24,7 @@ const Details = ({ resource }) => {
 
 function mapStateToProps(state) {
     const { resources, selectedResource } = state;
-    return { resource: selectedResource ? resources.find((resource) => resource.alpha3Code === selectedResource) : {} };
+    return { resource: selectedResource ? resources[selectedResource] : {} };
 }
 
 export default connect(

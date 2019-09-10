@@ -1,13 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import states from '../../data/states.json';
 
-const ListItem = ({ alpha3Code, clickHandler, isActive, name }) => {
-    const liClickHandler = () => { clickHandler(alpha3Code); };
+const ListItem = (props) => {
+    const { city, clickHandler, isActive, itemKey, state } = props;
+    const liClickHandler = () => { clickHandler(itemKey); };
     const classes = classNames('list-item', { 'list-item--active': isActive });
-    return (<li className={classes} onClick={liClickHandler}>{name}</li>);
+    const displayName = `${city}, ${states[state]}`;
+    return (
+        <li className={classes}>
+            <button type="button" onClick={liClickHandler}>{displayName}</button>
+        </li>
+    );
 };
 
-ListItem.propTypes = { name: PropTypes.string.isRequired };
+ListItem.propTypes = {
+    city: PropTypes.string,
+    clickHandler: PropTypes.func.isRequired,
+    isActive: PropTypes.bool.isRequired,
+    itemKey: PropTypes.string,
+    state: PropTypes.string,
+};
+
+ListItem.defaultProps = {
+    city: '',
+    itemKey: null,
+    state: '',
+};
 
 export default ListItem;

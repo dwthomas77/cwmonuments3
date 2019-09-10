@@ -6,8 +6,6 @@ ul {
 }
 li {
   border: thin blue solid;
-  padding: 5px 15px;
-  margin-bottom: 5px;
 }
 
 li:hover {
@@ -19,4 +17,12 @@ li:hover {
 li.list-item--active {
   background-color: navy;
   color: white;
+}
+
+li.list-item {
+  button {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+  }
 }

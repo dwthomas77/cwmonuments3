@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import debounce from 'debounce';
 import wretch from 'wretch';
-import resourcesSlice, { UPDATE_ALL_RESOURCES } from '../../reducers/resources';
+import filterSlice, { UPDATE_FILTER } from '../../reducers/filter';
 import './styles.scss';
 
 class Filter extends React.Component {
@@ -10,24 +10,17 @@ class Filter extends React.Component {
 
     changeHandler = (event) => {
         const { target: { value } } = event;
-        console.log('the value is ', value);
         this.setState({ value });
-        this.debouncedFetchResources(value);
+        this.debouncedSetFilter(value);
     }
 
-    fetchResources = (searchTerm) => {
-        console.log('DEBOUNCED!!!');
-        const { UPDATE_ALL_RESOURCES: updateAllResources } = this.props;
-        wretch()
-            .url(searchTerm ? `https://restcountries.eu/rest/v2/name/${searchTerm}` : 'https://restcountries.eu/rest/v2/all')
-            .get()
-            .json((json) => { updateAllResources(json) })
-            .catch(() => { updateAllResources([]) });
+    setFilter = (searchTerm) => {
+        this.props[UPDATE_FILTER](searchTerm);
     }
 
     constructor(props) {
         super(props);
-        this.debouncedFetchResources = debounce(this.fetchResources, 500);
+        this.debouncedSetFilter = debounce(this.setFilter, 50);
     }
 
     render() {
@@ -42,7 +35,7 @@ class Filter extends React.Component {
 }
 
 const mapDispatchToProps = {
-    [UPDATE_ALL_RESOURCES]: resourcesSlice.actions[UPDATE_ALL_RESOURCES],
+    [UPDATE_FILTER]: filterSlice.actions[UPDATE_FILTER],
 };
 
 export default connect(
