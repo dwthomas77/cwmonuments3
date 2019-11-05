@@ -1,22 +1,98 @@
 {
+    "ALL1" : {
+        "city": "Allenstown",
+        "state": "NH",
+        "location": {
+            "latitude": 43.111185,
+            "longitude": -71.356998,
+            "zoom": 12
+        }
+    },
     "BOS1" : {
         "city": "Boston",
-        "state": "MA"
+        "state": "MA",
+        "location": {
+            "latitude": 42.355474,
+            "longitude": -71.066422,
+            "mapType": "satellite",
+            "zoom": 20
+        }
     },
     "ELL1" : {
         "city": "Ellsworth",
-        "state": "ME"
+        "state": "ME",
+        "location": {
+            "latitude": 44.5391499,
+            "longitude": -68.4285879,
+            "zoom": 18
+        }
     },
     "HAV1" : {
         "city": "Haverhill",
-        "state": "MA"
+        "state": "MA",
+        "location": {
+            "latitude": 42.781468,
+            "longitude": -71.076815,
+            "mapType": "satellite",
+            "zoom": 20
+        }
     },
     "LON1" : {
         "city": "Londonderry",
-        "state": "NH"
+        "state": "NH",
+        "location": {
+            "latitude": 42.864270,
+            "longitude": -71.374201,
+            "mapType": "satellite",
+            "zoom": 20
+        }
     },
     "MET1" : {
         "city": "Methuen",
-        "state": "MA"
+        "state": "MA",
+        "location": {
+            "latitude": 42.728970,
+            "longitude": -71.185236,
+            "mapType": "satellite",
+            "zoom": 20
+        }
+    },
+    "WOO1" : {
+        "city": "Woodstock",
+        "state": "VT",
+        "location": {
+            "latitude": 43.626688,
+            "longitude": -72.514919,
+            "mapType": "satellite",
+            "zoom": 18
+        }
+    },
+    "AUG1" : {
+        "city": "Augusta",
+        "state": "ME",
+        "location": {
+            "latitude": 44.311180,
+            "longitude": -69.778946,
+            "mapType": "satellite"
+        }
+    },
+    "LAW1" : {
+        "city": "Lawrence",
+        "state": "MA",
+        "location": {
+            "latitude": 42.709360,
+            "longitude": -71.160695,
+            "mapType": "satellite"
+        }
+    },
+    "BRA1" : {
+        "city": "Brandon",
+        "state": "VT",
+        "location": {
+            "latitude": 43.798252,
+            "longitude": -73.086428,
+            "zoom": 15
+        }
     }
 }
+

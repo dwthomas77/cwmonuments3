@@ -10,22 +10,23 @@ import ListItem from '../ListItem';
 import Filter from '../Filter';
 import './styles.scss';
 
-const List = (props) => {
+export const List = (props) => {
     const {
         items,
         selectedResource: selectedKey,
         UPDATE_SELECTED_RESOURCE: updateSelectedResource,
     } = props;
+
     return (
-        <div>
-            <div style={{ fontSize: '14px', fontWeight: 'bold' }}>MONUMENTS</div>
+        <div className="List">
             <Filter />
-            <ul>
-                { Object.keys(items).map((key) => (
+            <ul className="list-group">
+                { Object.keys(items).sort().map((key) => (
                     <ListItem
                         {...items[key]}
-                        itemKey={key}
                         clickHandler={updateSelectedResource}
+                        id={key}
+                        itemKey={key}
                         isActive={selectedKey === key}
                         key={key}
                     />
@@ -65,9 +66,10 @@ const selectFilteredResources = createSelector(
     },
 );
 
-const mapStateToProps = (state) => {
+export const mapStateToProps = (state) => {
     return {
         items: selectFilteredResources(state),
+        selectedResource: selectedResourceSlice.selectors.getSelectedResource(state),
     };
 };
 

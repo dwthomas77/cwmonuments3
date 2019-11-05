@@ -5,7 +5,7 @@ import wretch from 'wretch';
 import filterSlice, { UPDATE_FILTER } from '../../reducers/filter';
 import './styles.scss';
 
-class Filter extends React.Component {
+export class Filter extends React.Component {
     state = { value: '' };
 
     changeHandler = (event) => {
@@ -27,8 +27,12 @@ class Filter extends React.Component {
         const { value } = this.state;
         return (
             <div className="filter">
-                <input type="text" value={value} onChange={this.changeHandler} />
-                <span>Filter your results</span>
+                <div className="input-group">
+                    <div className="input-group-prepend">
+                        <span className="input-group-text">Filter for city or state: </span>
+                    </div>
+                   <input type="text" value={value} onChange={this.changeHandler} className="form-control" />
+                </div>
             </div>
         );
     }

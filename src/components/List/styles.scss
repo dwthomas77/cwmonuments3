@@ -1,28 +1,42 @@
+@import 'styles/colors';
+
+.List {
+  background-color: $dark;
+  padding: 15px;
+
+}
+
 ul {
   list-style: none;
-  width: 500px;
+  width: 100%;
   margin: 0;
   padding: 0;
+  height: 200px;
+  overflow: scroll;
 }
 li {
   border: thin blue solid;
 }
 
 li:hover {
-  background-color: #42c8f5;
-  color: white;
+  background-color: $primary;
+  color: $white;
   cursor: pointer;
 }
 
 li.list-item--active {
-  background-color: navy;
-  color: white;
+  background-color: $primary;
+  color: $white;
 }
 
-li.list-item {
+li.list-group-item {
   button {
     width: 100%;
     height: 100%;
     padding: 16px;
   }
+}
+
+.App .list-group-item {
+  padding: 0;
 }
