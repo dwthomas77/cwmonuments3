@@ -93,6 +93,33 @@
             "longitude": -73.086428,
             "zoom": 15
         }
+    },
+    "NOR1" : {
+        "city": "Northfield",
+        "state": "VT",
+        "location": {
+            "latitude": 44.148620,
+            "longitude": -72.656821,
+            "zoom": 12
+        }
+    },
+    "WAI1" : {
+        "city": "Waitsfield",
+        "state": "VT",
+        "location": {
+            "latitude": 44.191640,
+            "longitude": -72.823150,
+            "zoom": 12
+        }
+    },
+    "WAT1" : {
+        "city": "Waterbury",
+        "state": "VT",
+        "location": {
+            "latitude": 44.339331,
+            "longitude":  -72.753694,
+            "zoom": 12
+        }
     }
 }
 

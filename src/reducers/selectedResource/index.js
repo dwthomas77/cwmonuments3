@@ -4,11 +4,9 @@ export const UPDATE_SELECTED_RESOURCE = 'UPDATE_SELECTED_RESOURCE';
 
 const selectedResource = createSlice({
     slice: 'selectedResource',
-    initialState: '',
+    initialState: 'BOS1',
     reducers: {
-        [UPDATE_SELECTED_RESOURCE]: (state, action) => {
-            return action.payload;
-        },
+        [UPDATE_SELECTED_RESOURCE]: (state, action) => action.payload,
     },
 });
 

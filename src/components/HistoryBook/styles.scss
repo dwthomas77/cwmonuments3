@@ -1,0 +1,23 @@
+@import 'styles/colors';
+
+.history-book {
+  height: 100px;
+  overflow-y: auto;
+}
+
+.history-entry {
+  height: 100%;
+  background-color: $primary;
+  padding: 7px;
+  overflow: hidden;
+}
+
+.history-entry__text {
+  background-color: $light;
+  margin-bottom: 0;
+  height: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 10px;
+  overflow-y: auto;
+}

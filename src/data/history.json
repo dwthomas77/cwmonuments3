@@ -1,0 +1,57 @@
+[
+  {
+    "id": "his1",
+    "locations": [],
+    "entry": "War broke out in April 1861 when secessionist forces attacked Fort Sumter in South Carolina shortly after Abraham Lincoln had been inaugurated as the President of the United States.",
+    "date": "4/12/1861",
+    "source": {
+      "link": "https://en.wikipedia.org/wiki/American_Civil_War"
+    }
+  },
+  {
+    "id": "his2",
+    "locations": [],
+    "entry": "The war effectively ended April 9, 1865, when General Robert E. Lee surrendered to General Ulysses S. Grant at the Battle of Appomattox Court House. Confederate generals throughout the southern states followed suit, the last surrender on land occurring June 23.",
+    "date": "4/9/1865",
+    "source": {
+      "link": "https://en.wikipedia.org/wiki/American_Civil_War"
+    }
+  },
+  {
+    "id": "his3",
+    "locations": [],
+    "entry": "The Civil War was a contest marked by the ferocity and frequency of battle. Over four years, 237 named battles were fought, as were many more minor actions and skirmishes, which were often characterized by their bitter intensity and high casualties. In his book The American Civil War, John Keegan writes that \"The American Civil War was to prove one of the most ferocious wars ever fought\". In many cases, without geographic objectives, the only target for each side was the enemy's soldier.",
+    "source": {
+      "link": "https://en.wikipedia.org/wiki/American_Civil_War",
+      "author": "Keegan",
+      "title": "The American Civil War",
+      "reference": "p. 73"
+    }
+  },
+  {
+    "id": "his4",
+    "locations": [],
+    "entry": "The first battle between ironclads happened on 9 March 1862, as the armored Monitor was deployed to protect the Union's wooden fleet from the ironclad ram Virginia and other Confederate warships. In this engagement, the second day of the Battle of Hampton Roads, the two ironclads repeatedly tried to ram one another while shells bounced off their armor. The battle attracted attention worldwide, making it clear that the wooden warship was now out of date, with the ironclads destroying them easily.",
+    "date": "3/9/1862",
+    "title": "Ironclads",
+    "source": {
+      "link": "https://en.wikipedia.org/wiki/Ironclad_warship#cite_note-25",
+      "author": "Sondhaus",
+      "title": "Naval Warfare 18-15 - 1914",
+      "reference": "p. 78-81"
+    }
+  },
+  {
+    "id": "his5",
+    "locations": [],
+    "entry": "In one of the first highly visible battles, in July 1861, a march by Union troops under the command of Maj. Gen. Irvin McDowell on the Confederate forces led by Gen. P. G. T. Beauregard near Washington was repulsed at the First Battle of Bull Run (also known as First Manassas).",
+    "date": "6/21/1861",
+    "title": "Ironclads",
+    "source": {
+      "link": "https://en.wikipedia.org/wiki/Ironclad_warship#cite_note-25",
+      "author": "Sondhaus",
+      "title": "Naval Warfare 18-15 - 1914",
+      "reference": "p. 78-81"
+    }
+  }
+]

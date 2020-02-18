@@ -1,12 +1,9 @@
 @import 'styles/colors';
 
 .filter {
-    width: 100%;
     display: flex;
-}
-.filter {
-    display: flex;
-    margin: 10px 0;
+    padding: 10px 10px 10px 10px;
+    background-color: $light;
     & > * { flex: 1 }
 
     input {

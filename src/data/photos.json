@@ -33,5 +33,30 @@
         "default": true,
         "monument": "LAW1",
         "url": "https://i.imgur.com/arOvGMI.jpg"
+    },
+    "PHOTO8": {
+        "default": true,
+        "monument": "BRA1",
+        "url": "https://i.imgur.com/xHdEuJn.png"
+    },
+    "PHOTO9": {
+        "default": true,
+        "monument": "ALL1",
+        "url": "https://i.imgur.com/b6yr9vj.jpg"
+    },
+    "PHOTO10": {
+        "default": true,
+        "monument": "NOR1",
+        "url": "https://i.imgur.com/UvDJgf3.jpg"
+    },
+    "PHOTO11": {
+        "default": true,
+        "monument": "WAT1",
+        "url": "https://i.imgur.com/HuKZMcy.jpg"
+    },
+    "PHOTO12": {
+        "default": true,
+        "monument": "WAI1",
+        "url": "https://i.imgur.com/XKjELzB.jpg"
     }
 }

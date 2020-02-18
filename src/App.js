@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Details from './components/Details';
+import HistoryBook from './components/HistoryBook';
 import List from './components/List';
 import MonumentMap from './components/Map';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,22 +22,20 @@ const App = () => {
     useEffect(googleApiManager(setGoogleMaps), []);
     return (
         <Container className="App" fluid>
-            <Row noGutters={true}>
+            <Row className="header" noGutters>
                 <Col>
                     <h2 className="title">CW Monuments</h2>
                 </Col>
             </Row>
-            <Row noGutter={true}>
+            <Row className="tiles" noGutters>
                 <Col sm={12} md={4}>
                     <List />
                     <Details />
                 </Col>
-                <Col sm={12} md={8}>
+                <Col className="right-col" sm={12} md={8}>
+                    <HistoryBook />
                     <MonumentMap googleMaps={googleMaps} />
                 </Col>
-            </Row>
-            <Row>
-                <footer>&nbsp;</footer>
             </Row>
         </Container>
     );
